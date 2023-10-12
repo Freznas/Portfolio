@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <string name="knapp_design">Design</string>
+    <string name="knapp_programmering">Programming</string>
+    <string name="knapp_hobby">Hobbies</string>
+    <string name="knapp_linkedin">Linkedin</string>
+    <string name="instagram">Instagram</string>
+    <string name="github">GitHub</string>
+    <string name="app_name">Portfolio</string>
+    <string name="Title"> Joakim Bjärkstedt</string>
+    <string name="bread">Hello! I am 34 years old and live in Stockholm, where I am currently
+        studying application development via KYH University of Applied Sciences.
+        I also have union training as a safety representative and have good knowledge of union and work environment.
+        I am a dedicated worker who is happy to take a little longer to learn new tasks and
+       to learn correct from the start, I have a easy time getting along with people. </string>
+
+    <string name="kodexempel">My Code examples</string>
+    <string name="min_design">My Designs</string>
+    <string name="hobbies">Me and my Hobbies </string>
+
+</resources>

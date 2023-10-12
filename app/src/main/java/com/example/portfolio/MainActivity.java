@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mediaPlayer = MediaPlayer.create(this,R.raw.mountains);
-//        mediaPlayer.start();
+        mediaPlayer = MediaPlayer.create(this, R.raw.mountains);
+        mediaPlayer.start();
         Design = findViewById(R.id.btn_design);
         Instagram = findViewById(R.id.btn_instagram);
         Programming = findViewById(R.id.btn_programming);
@@ -71,12 +71,12 @@ public class MainActivity extends AppCompatActivity
                 startActivity(newProgrammingIntent);
             }
         });
-       Instagram.setOnClickListener(new View.OnClickListener()
+        Instagram.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                                Intent intent = new Intent();
+                Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
                 intent.setData(Uri.parse("https://www.instagram.com/joakim_karl/"));
@@ -110,7 +110,12 @@ public class MainActivity extends AppCompatActivity
         });
 
     }
-
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        mediaPlayer.release();
+    }
 }
 
 

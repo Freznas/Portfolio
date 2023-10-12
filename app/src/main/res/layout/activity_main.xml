@@ -28,7 +28,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="320dp"
 
         android:gravity="top"
         android:orientation="vertical"
@@ -40,19 +40,18 @@
         app:layout_constraintVertical_bias="0.262">
 
         <ImageView
-            android:id="@+id/proficle"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
             android:layout_gravity="center"
-            android:src="@drawable/profilepic"
-            tools:ignore="ImageContrastCheck">
+            android:src="@drawable/profile_picture">
 
         </ImageView>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="243dp"
-            android:gravity="top|center"
+            android:layout_height="155dp"
+            android:gravity="center"
             android:text="@string/bread"
             android:textColor="@color/white"
             android:textSize="@dimen/font_small">
@@ -62,77 +61,94 @@
 
     </LinearLayout>
 
+
     <Button
         android:id="@+id/btn_programming"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/purple"
+
+        android:background="@drawable/btn_design"
         android:text="@string/knapp_programmering"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_hobbies"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="128dp"
-        android:backgroundTint="@color/purple"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_design"
         android:text="@string/knapp_hobby"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_design" />
 
     <Button
         android:id="@+id/btn_design"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="68dp"
-        android:backgroundTint="@color/purple"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_design"
         android:text="@string/knapp_design"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_programming" />
 
     <Button
         android:id="@+id/btn_instagram"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="128dp"
-        android:backgroundTint="@color/purple"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/btn_design"
         android:text="@string/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_github"
+        app:layout_constraintVertical_bias="0.013" />
 
     <Button
         android:id="@+id/btn_linkedin"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
+
+        android:layout_marginStart="110dp"
+
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/purple"
+        android:background="@drawable/btn_design"
         android:text="@string/knapp_linkedin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_github"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="68dp"
-        android:backgroundTint="@color/purple"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/btn_design"
         android:text="@string/github"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_linkedin"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

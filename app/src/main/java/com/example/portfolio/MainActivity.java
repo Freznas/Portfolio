@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
+//    deklarerar variabler
     Button Design;
     Button Instagram;
     Button Programming;
@@ -21,13 +22,12 @@ public class MainActivity extends AppCompatActivity
     Button GitHub;
     MediaPlayer mediaPlayer;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//tilldelar dem värden som hämtas från resurser som används i XMLen
         mediaPlayer = MediaPlayer.create(this, R.raw.mountains);
         mediaPlayer.start();
         Design = findViewById(R.id.btn_design);
@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity
         });
 
     }
+
     @Override
     protected void onStop()
     {

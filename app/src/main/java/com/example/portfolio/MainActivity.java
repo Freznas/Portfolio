@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+//Codereview versionen java
 public class MainActivity extends AppCompatActivity
 {
 //    deklarerar variabler
